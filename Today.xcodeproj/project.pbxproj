@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3F7D042A795C0600AC8ABB /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F7D032A795C0600AC8ABB /* ReminderViewController.swift */; };
 		2A58EB842A78DC8E002FA6E8 /* ReminderDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A58EB832A78DC8E002FA6E8 /* ReminderDoneButton.swift */; };
 		2A58EB862A78DDB3002FA6E8 /* ReminderListViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A58EB852A78DDB3002FA6E8 /* ReminderListViewController+Actions.swift */; };
+		2AC3ABE22A7A511700985C04 /* ReminderViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3ABE12A7A511700985C04 /* ReminderViewController+Row.swift */; };
 		2ACE25462A779BE000A0ABB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACE25452A779BE000A0ABB3 /* AppDelegate.swift */; };
 		2ACE25482A779BE000A0ABB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACE25472A779BE000A0ABB3 /* SceneDelegate.swift */; };
 		2ACE254A2A779BE000A0ABB3 /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACE25492A779BE000A0ABB3 /* ReminderListViewController.swift */; };
@@ -22,8 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A3F7D032A795C0600AC8ABB /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		2A58EB832A78DC8E002FA6E8 /* ReminderDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDoneButton.swift; sourceTree = "<group>"; };
 		2A58EB852A78DDB3002FA6E8 /* ReminderListViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+Actions.swift"; sourceTree = "<group>"; };
+		2AC3ABE12A7A511700985C04 /* ReminderViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Row.swift"; sourceTree = "<group>"; };
 		2ACE25422A779BE000A0ABB3 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACE25452A779BE000A0ABB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ACE25472A779BE000A0ABB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A3F7CFF2A795B8B00AC8ABB /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2ACE254E2A779BE200A0ABB3 /* Assets.xcassets */,
+				2ACE25532A779BE200A0ABB3 /* Info.plist */,
+				2ACE25502A779BE200A0ABB3 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2A3F7D002A795BA600AC8ABB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2ACE254B2A779BE000A0ABB3 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2A3F7D012A795BD900AC8ABB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2A3F7D022A795BED00AC8ABB /* DetailViewController */,
+				2ACE255F2A77C6CA00A0ABB3 /* ListViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2A3F7D022A795BED00AC8ABB /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A3F7D032A795C0600AC8ABB /* ReminderViewController.swift */,
+				2AC3ABE12A7A511700985C04 /* ReminderViewController+Row.swift */,
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
 		2ACE25392A779BE000A0ABB3 = {
 			isa = PBXGroup;
 			children = (
@@ -68,14 +108,12 @@
 		2ACE25442A779BE000A0ABB3 /* Today */ = {
 			isa = PBXGroup;
 			children = (
-				2ACE25592A779E0800A0ABB3 /* Models */,
 				2ACE25452A779BE000A0ABB3 /* AppDelegate.swift */,
 				2ACE25472A779BE000A0ABB3 /* SceneDelegate.swift */,
-				2ACE255F2A77C6CA00A0ABB3 /* ListViewController */,
-				2ACE254B2A779BE000A0ABB3 /* Main.storyboard */,
-				2ACE254E2A779BE200A0ABB3 /* Assets.xcassets */,
-				2ACE25502A779BE200A0ABB3 /* LaunchScreen.storyboard */,
-				2ACE25532A779BE200A0ABB3 /* Info.plist */,
+				2A3F7D012A795BD900AC8ABB /* Controllers */,
+				2ACE25592A779E0800A0ABB3 /* Models */,
+				2A3F7D002A795BA600AC8ABB /* Storyboards */,
+				2A3F7CFF2A795B8B00AC8ABB /* SupportingFiles */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -174,8 +212,10 @@
 			files = (
 				2ACE25632A77DE3200A0ABB3 /* UIColor+Today.swift in Sources */,
 				2A58EB862A78DDB3002FA6E8 /* ReminderListViewController+Actions.swift in Sources */,
+				2A3F7D042A795C0600AC8ABB /* ReminderViewController.swift in Sources */,
 				2ACE25612A77C6EE00A0ABB3 /* ReminderListViewController+DataSource.swift in Sources */,
 				2ACE254A2A779BE000A0ABB3 /* ReminderListViewController.swift in Sources */,
+				2AC3ABE22A7A511700985C04 /* ReminderViewController+Row.swift in Sources */,
 				2A58EB842A78DC8E002FA6E8 /* ReminderDoneButton.swift in Sources */,
 				2ACE255D2A77BDA000A0ABB3 /* Date+Today.swift in Sources */,
 				2ACE25462A779BE000A0ABB3 /* AppDelegate.swift in Sources */,
@@ -329,7 +369,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H94WDCFCK6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Today/Info.plist;
+				INFOPLIST_FILE = Today/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -357,7 +397,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H94WDCFCK6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Today/Info.plist;
+				INFOPLIST_FILE = Today/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
